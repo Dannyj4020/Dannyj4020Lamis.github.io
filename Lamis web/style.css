@@ -1,0 +1,44 @@
+/* REASONS */
+.reasons {
+    text-align: center;
+}
+
+.reasons button {
+    background: #04ee10;
+    color: rgb(250, 13, 13);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* COUNTDOWN */
+.countdown {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+/* HEARTS */
+.hearts::before {
+    content: "💗 💕 💖 💞 💓 😘";
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    animation: float 8s infinite linear;
+    font-size: 30px;
+}
+
+@keyframes float {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-800px); opacity: 0; }
+}
+vvideo {
+    width: 640px;      /* fixed width */
+    height: 480px;     /* fixed height */
+    display: block;
+    margin: 20px auto; /* centers the video */
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+

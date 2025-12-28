@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For My Baby ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff5f7;
+    color: #333;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    font-family: Georgia, serif;
+    color: #b30047;
+    text-align: center;
+}
+
+/* LOGIN */
+#login {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#ffccd5, #fff);
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+}
+
+.login-box input {
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.login-box button {
+    background: #69016d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+                url("hero.jpg") center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    background: rgba(196, 19, 107, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* GALLERY */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.photo-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.photo-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* PROMISES */
+.promises ul {
+    list-style: none;
+    padding: 0;
+}
+
+.promises li {
+    background: #f3447e;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* REASONS */
+.reasons {
+    text-align: center;
+}
+
+.reasons button {
+    background: #970202;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* COUNTDOWN */
+.countdown {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+/* VIDEO — FIXED SD 640x480 (3:2) */
+video {
+    width: 640px;
+    height: 480px;
+    max-width: 100%;
+    display: block;
+    margin: 30px auto;
+    border-radius: 20px;
+    background: black;
+    object-fit: contain;
+}
+
+/* FOOTER */
+footer {
+    background: #0375c0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* FADE */
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 1s;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* HEARTS */
+.hearts span {
+    position: fixed;
+    bottom: -50px;
+    animation: float 8s linear infinite;
+    font-size: 24px;
+}
+
+@keyframes float {
+    to {
+        transform: translateY(-800px);
+        opacity: 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div id="login">
+    <div class="login-box">
+        <h2>Only For You ❤️</h2>
+        <input type="password" id="pass" placeholder="Our secret">
+        <button onclick="enter()">Enter</button>
+        <p id="error"></p>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="site" style="display:none;">
+
+<audio id="music" loop>
+    <!-- CHANGE SONG HERE -->
+    <source src="Sajni (Slowed   Reverb) _ Arijit Singh _ Laapataa Ladies _ SR Lofi(MP3_160K).mp3">
+</audio>
+
+<header class="hero fade">
+    <div class="hero-text">
+        <h1>To My Baby ❤️</h1>
+        <p>Every love story is beautiful, but ours is my favorite.</p>
+    </div>
+</header>
+
+<section class="fade">
+    <h2>A Letter From My Heart</h2>
+    <p style="text-align:center;">
+        This little corner of the internet exists because of you.
+        Loving you is the best thing I’ve ever done.
+    </p>
+</section>
+
+<section class="fade">
+    <h2>Our Memories 📸</h2>
+    <div class="photo-grid">
+        <div class="photo-card">
+            <img src="imigers/Lamis/IMG-20251005-WA0008.jpg">
+            <p>The moment everything changed.</p>
+        </div>
+        <div class="photo-card">
+            <img src="imigers/Lamis/IMG-20251005-WA0018.jpg">
+            <p>Your smile is my home.</p>
+        </div>
+        <div class="photo-card">
+            <img src="imigers/Lamis/IMG-20250923-WA0017.jpg">
+            <p>Loving you feels so natural,like breathing.</p>
+        </div>
+        <div class="photo-card">
+            <img src="imigers/Lamis/IMG-20250803-WA0054.jpg">
+            <p>My favorite future is one where i wake up next to you</p>
+        </div>
+        <div class="photo-card">
+            <img src="imigers/Lamis/IMG-20250923-WA0018.jpg">
+            <p>I did not know love could be this gentle.</p>
+        </div>
+        <div class="photo-card">
+            <img src="imigers/Lamis/IMG-20251005-WA0038.jpg">
+            <p>I dont  have to look for forever anymore.I found it.</p>
+        </div>
+    </div>
+</section>
+
+<section class="promises fade">
+    <h2>My Promises 🤍</h2>
+    <ul>
+        <li>To always choose you</li>
+        <li>To protect your heart</li>
+        <li>To love you endlessly</li>
+        <li>To never make you sad</li>
+        <li>To stop loving you</li>
+        <li>No matter where i am ,part of me always is with you </li>
+        <li>I choose you  even on the days when love is quiet</li>
+    </ul>
+</section>
+
+<section class="reasons fade">
+    <h2>Reasons I Love You 💖</h2>
+    <p id="reason">Click the button ❤️</p>
+    <button onclick="newReason()">Tell Me Another</button>
+</section>
+
+<section class="countdown fade">
+    <h2>Counting Down to Forever ⏳</h2>
+    <p id="timer"></p>
+</section>
+
+<section class="fade">
+    <h2>A Special Moment 🎥</h2>
+    <video id="loveVideo" controls poster="hero.jpg">
+        <!-- CHANGE VIDEO HERE -->
+        <source src="lv_7519310469027401021_20251018234950.mp4" type="video/mp4">
+    </video>
+    <h3>It was that smile the first time i saw it, i know i wanted to see it for the rest of my life 
+    </h3>
+</section>
+
+<footer>
+    <p>Made with love  by Daniel ❤️</p>
+</footer>
+
+<div class="hearts"></div>
+</div>
+
+<script>
+/* LOGIN + AUTO MUSIC */
+function enter() {
+    if (pass.value === "Lamis") {
+        login.style.display = "none";
+        site.style.display = "block";
+        music.volume = 0.6;
+        music.play();
+    } else {
+        error.innerText = "Wrong secret 💔";
+    }
+}
+
+/* FADE IN */
+const fades = document.querySelectorAll(".fade");
+window.addEventListener("scroll", () => {
+    fades.forEach(f => {
+        if (f.getBoundingClientRect().top < window.innerHeight - 100) {
+            f.classList.add("show");
+        }
+    });
+});
+
+/* REASONS */
+const reasons = [
+    "Your smile feels like home",
+    "You understand me",
+    "You make life softer",
+    "You chose me",
+    "You are my peace",
+    
+];
+
+function newReason() {
+    reason.innerText = reasons[Math.floor(Math.random() * reasons.length)];
+}
+
+/* COUNTDOWN — CHANGE DATE HERE */
+const target = new Date("2026-05-24");
+setInterval(() => {
+    const diff = target - new Date();
+    timer.innerText = Math.floor(diff / (1000*60*60*24)) + " days until forever 💍";
+}, 1000);
+
+/* HEARTS */
+setInterval(() => {
+    const heart = document.createElement("span");
+    heart.innerText = "💗";
+    heart.style.left = Math.random() * 100 + "vw";
+    hearts.appendChild(heart);
+    setTimeout(() => heart.remove(), 8000);
+}, 500);
+
+/* VIDEO ↔ MUSIC FADE */
+let fade;
+function fadeMusic(to) {
+    clearInterval(fade);
+    fade = setInterval(() => {
+        if (Math.abs(music.volume - to) < 0.02) {
+            music.volume = to;
+            if (to === 0) music.pause();
+            clearInterval(fade);
+        } else {
+            music.volume += music.volume < to ? 0.02 : -0.02;
+        }
+    }, 100);
+}
+
+loveVideo.addEventListener("play", () => fadeMusic(0));
+loveVideo.addEventListener("pause", () => { music.play(); fadeMusic(0.6); });
+loveVideo.addEventListener("ended", () => { music.play(); fadeMusic(0.6); });
+</script>
+
+</body>
+</html>
